@@ -1,0 +1,241 @@
+/* google fonts link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/*---------------------------------
+           header style
+-----------------------------------*/
+.container {
+  width: 100%;
+  width: 1050px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 60px;
+}
+.heading {
+  background-color: #2d25a0;
+  color: white;
+  line-height: 25px;
+  font-size: 25px;
+  margin: 0;
+  height: 677px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 226px 0 158px;
+}
+.half-width {
+  width: 50%;
+}
+.half-width img {
+  width: 556.01px;
+  height: 438px;
+}
+.half-width a {
+  text-decoration: none;
+}
+.button-style {
+  background-color: #e02c6d;
+  color: white;
+  font-size: 15px;
+  padding: 2% 3%;
+}
+.heading:hover img {
+  transform: rotate(360deg) scale(0.5);
+  transition: transform 2s ease-in-out;
+}
+/*-----------------------------------
+              players style
+-------------------------------------*/
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px 30px;
+  width: 1050px;
+  margin-bottom: 30px;
+}
+.player {
+  width: 300px;
+  height: 474px;
+  box-shadow: 1px 1px 8px rgb(214, 212, 212);
+  padding: 6%;
+}
+.player img {
+  height: 252px;
+  width: 298px;
+}
+.player p {
+  font-size: 15px;
+  color: gray;
+}
+/*-----------------------------------
+              fans style
+-------------------------------------*/
+.title {
+  text-align: center;
+}
+.fans {
+  width: 900px;
+  box-shadow: 1px 1px 5px rgb(221, 217, 217);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2%;
+  color: white;
+  background-image: linear-gradient(rgb(121, 38, 199), rgb(174, 98, 245));
+}
+.fan {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.fan img {
+  width: 56px;
+  height: 56px;
+}
+.fan-name {
+  margin-left: 16px;
+  font-size: 18px;
+}
+/*----------------------------------
+            latest news style
+------------------------------------*/
+.latest-news h1 {
+  color: rgb(121, 38, 199);
+  padding-top: 15px;
+  height: 70px;
+  margin-top: 40px;
+  font-size: 2em;
+  text-align: center;
+}
+.news-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+.news {
+  color: gray;
+  width: 240px;
+  margin: 0 auto;
+  padding: 0 50px;
+  box-shadow: 1px 1px 8px rgb(214, 212, 212);
+  padding: 2%;
+}
+.news h3 {
+  color: black;
+}
+.news img {
+  width: 240px;
+  height: 210px;
+}
+
+/*----------------------------------
+            footer style
+------------------------------------*/
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.logo img {
+  width: 483px;
+  height: 141px;
+}
+.icon {
+  display: flex;
+}
+footer a {
+  margin-right: 10px;
+  width: 60px;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(240, 232, 232);
+}
+footer i {
+  color: #969bab;
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/*-----------------------------------
+           media queries
+-------------------------------------*/
+/* phone device */
+@media only screen and (max-width: 688px) {
+  body {
+    margin: 0;
+  }
+
+  .heading {
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .half-width h1 {
+    font-size: 0.99em;
+  }
+  .half-width {
+    width: auto;
+    margin: 0;
+    padding: 2%;
+  }
+  .half-width img {
+    padding-top: 100px;
+    height: 219px;
+    width: 278px;
+  }
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .fans {
+    width: 50%;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .news-container {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer-container {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .logo img {
+    width: 250px;
+    height: 70px;
+  }
+  .icon {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .icon a {
+    align-items: center;
+    margin: 0 auto;
+  }
+}
